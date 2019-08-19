@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".emiCalc">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Due:"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Max"
+        android:id="@+id/totalAmount"
+        android:textSize="24sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Monthly Payments:"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Max"
+        android:id="@+id/mPaymentsLabel"
+        android:textSize="24sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Interest (Monthly) Amount"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MInterest"
+        android:id="@+id/mInterestPaymentLabel"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="75dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loan Amount"
+        android:id="@+id/loanAmt"
+        android:textAlignment="center"
+        android:textSize="22sp"/>
+    <SeekBar
+        android:id="@+id/loanBr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:max="1000000"
+        android:progress="100000"
+        android:progressTint="@color/colorPrimary"
+        android:progressBackgroundTint="@color/design_default_color_primary"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Interest Rate"
+        android:id="@+id/intRate"
+        android:textAlignment="center"
+        android:textSize="22sp"/>
+    <SeekBar
+        android:id="@+id/intBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:max="100"
+        android:progress="20"
+        android:progressTint="@color/colorPrimary"
+        android:progressBackgroundTint="@color/design_default_color_primary"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loan Tenure"
+        android:id="@+id/loanTen"
+        android:textAlignment="center"
+        android:textSize="22sp"/>
+    <SeekBar
+        android:id="@+id/tenBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:max="480"
+        android:progress="360"
+        android:progressTint="@color/colorPrimary"
+        android:progressBackgroundTint="@color/design_default_color_primary"/>
+
+
+</LinearLayout>
